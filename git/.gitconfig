@@ -1,0 +1,16 @@
+[user]
+  	name = Rick van Schijndel
+	email = rol3517@gmail.com
+
+[github]
+	user = Mindavi
+
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+
+[push]
+	default = simple
+	followTags = true
+
+
