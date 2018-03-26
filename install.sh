@@ -16,3 +16,5 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
 mkdir -p .config/i3
 ln -sfv "$DOTFILES_DIR/i3/config" ~/.config/i3/config
+
+ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~/.vimrc
