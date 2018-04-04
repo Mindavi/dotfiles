@@ -162,16 +162,16 @@ bindsym $mod+Delete exec i3lock
 # screen brightness
 # https://github.com/haikarainen/light.git
 # set minimum brightness with light -v3 -Scr <min-brightness> (e.g. 10)
-bindsym XF86MonBrightnessUp exec "light -A 5; notify-send -t 10 'brightness up' $(light -G)"
-bindsym XF86MonBrightnessDown exec "light -U 5; notify-send -t 10 'brightness down' $(light -G)"
+bindsym XF86MonBrightnessUp exec "light -A 5; notify-send -t 200 'brightness up' $(light -G)"
+bindsym XF86MonBrightnessDown exec "light -U 5; notify-send -t 200 'brightness down' $(light -G)"
 
 # https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html
 
 # Pulse Audio controls
 # Get audio volume https://unix.stackexchange.com/a/89583
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%; notify-send -t 10 'volume up'" 
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%; notify-send -t 10 'volume down'" 
-bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 0 toggle; notify-send -t 10 'toggle mute'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%; notify-send -t 200 'volume up'" 
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%; notify-send -t 200 'volume down'" 
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 0 toggle; notify-send -t 200 'toggle mute'"
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
