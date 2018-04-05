@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Inspiration https://github.com/webpro/dotfiles/blob/master/install.sh
 
 # Get current directory
@@ -26,4 +24,4 @@ function symlink() {
 
 symlink
 
-source ~/.bash_profile
+source ~/.bashrc
