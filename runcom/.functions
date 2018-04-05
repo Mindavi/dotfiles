@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# start tizonia with a spotify playlist
+function splay() {
+  tizonia -s --spotify-playlist "$@"
+}
