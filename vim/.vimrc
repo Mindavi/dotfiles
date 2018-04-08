@@ -11,7 +11,6 @@ Plug 'rayburgemeestre/phpfolding.vim'
 Plug 'qbbr/vim-symfony'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'scrooloose/nerdtree'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 call plug#end()
 
 " Use tabs inside makefiles
