@@ -5,7 +5,13 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+" Php and symfony plugins
 Plug 'StanAngeloff/php.vim'
+Plug 'rayburgemeestre/phpfolding.vim'
+Plug 'qbbr/vim-symfony'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'scrooloose/nerdtree'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 call plug#end()
 
 " Use tabs inside makefiles
@@ -18,3 +24,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
+map <F5> <Esc>:EnableFastPHPFolds<Cr>
+
