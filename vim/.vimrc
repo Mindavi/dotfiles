@@ -25,4 +25,6 @@ set softtabstop=2
 set expandtab
 
 map <F5> <Esc>:EnableFastPHPFolds<Cr>
+colo elflord
+syntax on
 
