@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -159,6 +159,9 @@ bar {
 # lock computer
 bindsym $mod+Delete exec i3lock
 
+# Disable window titlebars entirely
+for_window [class="^.*"] border pixel 2
+
 # screen brightness
 # https://github.com/haikarainen/light.git
 # set minimum brightness with light -v3 -Scr <min-brightness> (e.g. 10)
@@ -192,6 +195,7 @@ bindsym $mod+p exec "xrandr --output HDMI-2 --auto --right-of eDP-1; notify-send
 # startup applications
 exec dropbox start
 exec Telegram -startintray &
+exec --no-startup-id compton --config ~/.config/compton/compton.conf
 
 # background setup
-exec ~/.fehbg &
+exec_always ~/.fehbg &

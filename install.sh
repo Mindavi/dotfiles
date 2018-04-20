@@ -12,12 +12,15 @@ function symlink() {
   ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
   ln -sfv "$DOTFILES_DIR/runcom/.functions" ~
   ln -sfv "$DOTFILES_DIR/runcom/.aliases" ~
+  ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 
   ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
   ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
   mkdir -p ~/.config/i3
   ln -sfv "$DOTFILES_DIR/i3/config" ~/.config/i3/config
+  mkdir -p ~/.config/compton
+  ln -sfv "$DOTFILES_DIR/compton/compton.conf" ~/.config/compton/compton.conf
 
   ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~/.vimrc
 }
