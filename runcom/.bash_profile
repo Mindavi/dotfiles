@@ -26,7 +26,11 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
+# Globbing for files with **/filename
 shopt -s globstar;
+
+# Disable software flow control (Ctrl-S ctrl-Q)
+stty -ixon;
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
