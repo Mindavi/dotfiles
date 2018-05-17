@@ -1,7 +1,6 @@
 *~
 ._*
 .DS_STORE
-.idea
 node_modules
 npm-debug.log
 *.o

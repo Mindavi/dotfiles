@@ -168,6 +168,9 @@ for_window [class="^.*"] border pixel 2
 bindsym XF86MonBrightnessUp exec "light -A 5; notify-send -t 200 'brightness up' $(light -G)"
 bindsym XF86MonBrightnessDown exec "light -U 5; notify-send -t 200 'brightness down' $(light -G)"
 
+# screen off key (fn + f7 for me)
+bindcode 253 exec "sleep 1; xset dpms force off"
+
 # https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html
 
 # Pulse Audio controls
@@ -187,7 +190,7 @@ bindsym XF86KbdBrightnessDown exec light -k -U 34
 bindsym XF86KbdBrightnessUp exec light -k -A 34
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+# bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Multiple screen setup
 bindsym $mod+p exec "xrandr --output HDMI-2 --auto --right-of eDP-1; notify-send -t 100 'screen connected'"

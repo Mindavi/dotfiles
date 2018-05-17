@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 
 alias volume="amixer get Master | awk '\$0~/%/{print \$4}' | tr -d '[]'"
+alias soff="sleep 1; xset dpms force off"
+
+# ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+
