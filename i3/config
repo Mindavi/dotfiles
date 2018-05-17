@@ -157,7 +157,7 @@ bar {
 }
 
 # lock computer
-bindsym $mod+Delete exec i3lock
+bindsym $mod+Delete exec ~/.config/i3/lock.sh
 
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
