@@ -20,6 +20,9 @@ function symlink() {
   mkdir -p ~/.config/i3
   ln -sfv "$DOTFILES_DIR/i3/config" ~/.config/i3/config
   ln -sfv "$DOTFILES_DIR/i3/lock.sh" ~/.config/i3/lock.sh
+  ln -sfv "$DOTFILES_DIR/i3/screenshot.sh" ~/.config/i3/screenshot.sh
+  mkdir -p ~/.config/dunst
+  ln -sfv "$DOTFILES_DIR/i3/dunstrc" ~/.config/dunst/dunstrc
   mkdir -p ~/.config/i3status
   ln -sfv "$DOTFILES_DIR/i3/i3status.conf" ~/.config/i3status/config
   # add to cron jobs to give low battery warning (* * * * *  bash /home/user_name/bin/battery_monitor.sh

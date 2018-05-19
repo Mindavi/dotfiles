@@ -165,11 +165,14 @@ for_window [class="^.*"] border pixel 2
 # screen brightness
 # https://github.com/haikarainen/light.git
 # set minimum brightness with light -v3 -Scr <min-brightness> (e.g. 10)
-bindsym XF86MonBrightnessUp exec "light -A 5; notify-send -t 200 'brightness up' $(light -G)"
-bindsym XF86MonBrightnessDown exec "light -U 5; notify-send -t 200 'brightness down' $(light -G)"
+bindsym XF86MonBrightnessUp exec "light -A 5; notify-send -i notification-display-brightness -t 200 'brightness up' $(light -G)"
+bindsym XF86MonBrightnessDown exec "light -U 5; notify-send -i notification-display-brightness -t 200 'brightness down' $(light -G)"
 
 # screen off key (fn + f7 for me)
 bindcode 253 exec "sleep 1; xset dpms force off"
+
+# screenshot
+bindsym Print exec ~/.config/i3/screenshot.sh
 
 # https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html
 

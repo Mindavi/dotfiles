@@ -10,10 +10,10 @@
 # Dependencies:
 # imagemagick
 # i3lock
-# scrot (optional but default)
+# maim
 
 IMAGE=/tmp/i3lock.png
-SCREENSHOT="scrot $IMAGE" # 0.46s
+SCREENSHOT="maim $IMAGE"
 
 # Alternate screenshot method with imagemagick. NOTE: it is much slower
 # SCREENSHOT="import -window root $IMAGE" # 1.35s
@@ -31,7 +31,7 @@ BLURTYPE="0x8"
 
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
-convert $IMAGE -blur $BLURTYPE $IMAGE
-i3lock -i $IMAGE
+convert -blur $BLURTYPE $IMAGE $IMAGE
+i3lock -e -f -i $IMAGE
 rm $IMAGE
 
