@@ -2,6 +2,7 @@
 
 alias volume="amixer get Master | awk '\$0~/%/{print \$4}' | tr -d '[]'"
 alias soff="sleep 1; xset dpms force off"
+alias connected-displays="xrandr | grep -v disconnected | awk '/connected/ { print \$1 }'"
 
 # ls aliases
 alias ll='ls -alF'
