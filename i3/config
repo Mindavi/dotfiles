@@ -201,6 +201,7 @@ bindsym $mod+p exec "xrandr --output HDMI-1-2 --auto --right-of eDP-1-1; notify-
 
 # startup applications
 exec dropbox start
+exec stack &
 exec Telegram -startintray &
 exec --no-startup-id compton --config ~/.config/compton/compton.conf
 
