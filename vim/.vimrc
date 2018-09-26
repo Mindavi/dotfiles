@@ -6,10 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 " Php and symfony plugins
-Plug 'StanAngeloff/php.vim'
 Plug 'rayburgemeestre/phpfolding.vim'
-Plug 'qbbr/vim-symfony'
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'scrooloose/nerdtree'
 call plug#end()
 
