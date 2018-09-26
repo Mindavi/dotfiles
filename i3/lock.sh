@@ -29,9 +29,22 @@ BLURTYPE="0x8"
 #BLURTYPE="2x8" # 2.90s
 #BLURTYPE="2x3" # 2.92s
 
+array[0]="-canny 5x3"
+array[1]="-blur $BLURTYPE"
+array[2]="-paint 10"
+array[3]="-wave 25x15"
+array[4]="-spread 2"
+
+size=${#array[@]}
+index=$(($RANDOM % $size))
+
+OPTION=${array[$index]}
+echo $OPTION
+
 # Get the screenshot, add the blur and lock the screen with it
 $SCREENSHOT
-convert -blur $BLURTYPE $IMAGE $IMAGE
+
+convert $OPTION $IMAGE $IMAGE
 i3lock -e -f -i $IMAGE
 rm $IMAGE
 
