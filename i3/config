@@ -197,7 +197,7 @@ bindsym XF86KbdBrightnessUp exec light -k -A 34
 # bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Multiple screen setup
-bindsym $mod+p exec "xrandr --output HDMI-1-2 --auto --right-of eDP-1-1; notify-send -t 100 'screen connected'"
+bindsym $mod+p exec "xrandr --output HDMI-1-2 --auto --left-of eDP-1-1; notify-send -t 100 'screen connected'"
 
 # startup applications
 exec dropbox start
