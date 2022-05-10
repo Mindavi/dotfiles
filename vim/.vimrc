@@ -5,9 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-" Php and symfony plugins
-Plug 'rayburgemeestre/phpfolding.vim'
-Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Use tabs inside makefiles
@@ -21,7 +18,6 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-map <F5> <Esc>:EnableFastPHPFolds<Cr>
 colo elflord
 syntax on
 
