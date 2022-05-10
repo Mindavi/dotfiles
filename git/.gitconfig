@@ -8,9 +8,14 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
+	pager = less -FX
 
 [push]
 	default = simple
 	followTags = true
 
 
+[pull]
+	rebase = false
+[color]
+	ui = auto
