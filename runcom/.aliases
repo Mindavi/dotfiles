@@ -8,4 +8,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# git aliases
+alias gs='git status'
+alias gd='git diff'
+alias gap='git add -p'
+
+# nix build aliases
+alias nbca="nix build -f default.nix --arg config '{ contentAddressedByDefault = true; }'"
+alias nsca="nix-shell --arg config '{ contentAddressedByDefault = true; }' -A"
 
