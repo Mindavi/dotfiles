@@ -28,8 +28,6 @@ function symlink() {
   mkdir -p ~/bin
   # add to cron jobs to give low battery warning (* * * * *  bash /home/user_name/bin/battery_monitor.sh
   ln -sfv "$DOTFILES_DIR/i3/battery_monitor.sh" ~/bin/battery_monitor.sh
-  mkdir -p ~/.config/compton
-  ln -sfv "$DOTFILES_DIR/compton/compton.conf" ~/.config/compton/compton.conf
 
   ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~/.vimrc
 }
