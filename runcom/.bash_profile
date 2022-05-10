@@ -121,4 +121,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export XDG_DATA_HOME="$HOME/.local/share"
 
