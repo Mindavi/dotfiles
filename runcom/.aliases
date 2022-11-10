@@ -11,6 +11,7 @@ alias l='ls -CF'
 # git aliases
 alias gs='git status'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gap='git add -p'
 
 # nix build aliases
