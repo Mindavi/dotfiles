@@ -9,6 +9,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-colo elflord
+colorscheme elflord
 syntax on
 
+au BufRead,BufNewFile *.nix set filetype=nix
