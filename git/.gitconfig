@@ -1,21 +1,48 @@
 [user]
-	name = Rick van Schijndel
-	email = rol3517@gmail.com
+  name = Rick van Schijndel
+  email = rol3517@gmail.com
 
 [github]
-	user = Mindavi
+  user = Mindavi
 
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = vim
-	pager = less -FX
+  excludesfile = ~/.gitignore_global
+  editor = vim
+  # For Windows setup
+  # editor = "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+  pager = less -FX
 
 [push]
-	default = simple
-	followTags = true
-
+  default = simple
+  followTags = true
+  autoSetupRemote = true
 
 [pull]
-	rebase = false
+  rebase = false
+
 [color]
-	ui = auto
+  ui = auto
+
+[column]
+  ui = auto
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = version:refname
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
+[init]
+  defaultBranch = master
+
+[fetch]
+  all = true
+
+[help]
+  autocorrect = prompt
